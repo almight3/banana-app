@@ -1,6 +1,6 @@
-let translateButton = document.querySelectorer("#translate-button");
-let traslateInput = documnet.querySelectorer("#translate-input");
-let tralateOutput = documnet.querySelectorer("#translate-output");
+var btnTranslate = document.querySelector("#translate-button");
+let translateInput = document.querySelector("#translate-input");
+let translateOutput = document.querySelector("#translate-output");
 
 var serverUrl = "https://api.funtranslations.com/translate/minion.json"
 
@@ -14,17 +14,15 @@ function errorHandler(error){
     alert("request time out try again after siome time");    
 }
 function clickHandler(){
-    var inputText = traslateInput.value;//Taking Input
-    fetch(getTranslatedUrl).then(
-        function response(inputText) {
-            return response.json()
-        }). then(function logJson(json){
-            return
-            var translateText = console.log(json.contents.translated);
-            translateOutput.inputText = translateText;
+    var inputText = translateInput.value;//Taking Input
+    fetch(getTranslatedUrl(inputText))
+        .then(response => response.json())
+        .then(json =>{
+            let translatedText = console.log(json.contents.translate);
+            translateOutput.innerText = translatedText; 
         })
         .catch(errorHandler)
 
 }
 
-translateButton.addEventListener("click", clickHandler);
+btnTranslate.addEventListener("click", clickHandler);
