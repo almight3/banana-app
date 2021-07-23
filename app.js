@@ -14,12 +14,12 @@ function errorHandler(error){
     alert("request time out try again after siome time");    
 }
 function clickHandler(){
-    var inputText = translateInput.value;//Taking Input
+    var inputText = textInput.value;//Taking Input
     fetch(getTranslatedUrl(inputText))
-        .then(response => response.json())
+        .then(response => response.json()) 
         .then(json =>{
-            let translatedText = console.log(json.contents.translate);
-            translateOutput.innerText = translatedText; 
+            let translatedText = json.contents.translated;
+            textOutput.innerText = translatedText; 
         })
         .catch(errorHandler)
 
