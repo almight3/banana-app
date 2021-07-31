@@ -1,45 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&display=swap');
 :root{
   --primary:#F6C616;
+
 }
 body{
-  margin:0rem;
-  
+margin: 0;
+font-family: 'Gowun Batang', serif;
 }
-nav {
+
+
+
+nav{
+  font-size: 20px;
+  font-weight: 900;
+  padding: 1rem  ;
+  height: 65px;
   background-color: var(--primary);
   text-align: center;
-  height: 80px;
-  padding-top: 1rem;
-  opacity: 1  ;
-
- 
 }
-button{
-  margin-top: 2rem;
-  margin-left:44rem;
-  padding:  1.3rem;
-  
-  
-  border-style:none;
-  background-color: var(--primary);
-  color: black;
+main{
+  background-image: url('img/Optimized-ca10daa9b23368ddc48708a0d7026914\ \(1\).jpg');
+  background-position: right; 
+  background-repeat: no-repeat;
 
 }
-body{
-  background-image: url("img/ca10daa9b23368ddc48708a0d7026914\ \(1\).jpg");
+#empty{
+  height: 11vh;
 }
+#empty1{
+  height: 3vh;
+}
+
 #key{
-
-  max-width: 590px;
-  margin: auto;
+    max-width:220px;
+    margin: auto;
+    padding: 0.2rem 0 1rem;
 }
-
+#translate-button{
+    padding: 1rem;
+    background-color:var(--primary) ;
+    border-radius: 5px;
+    border-style: none;
+    margin:1rem auto ;
+    width: 10rem;
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+}
 #translate-output {
-  width:30rem;
-  height: 10vh;
+  max-width:32rem;
+  height: 16vh;
   padding: 1rem;
   border: 1px solid black;
-  margin: 8rem auto 5rem auto;
+  margin: 1rem auto ;
+  border-radius: 5px;
 
 }
 #translate-input{
@@ -48,26 +62,28 @@ body{
 }
 textarea{
   width: 32rem;
-  height: 12vh;
+  height: 17vh;
+  padding: 1rem;
   margin: auto;
   margin-top: 4rem;
   display: block;
+  border: 1px solid black;
+  border-radius: 5px;
 }
-
 footer{
   background-color: var(--primary);
-  text-align: center;
-  height: 15vh;
-  padding-top: 1rem;
-  position: fixed;
+  height: 130px;
+  position:fixed;
   bottom: 0;
   width: 100%;
   
+  padding: 0rem 0 4rem 0  ;
+  
+  
 }
-
 footer div{
+  padding: 1rem ;
   max-width: 600px;
+  margin: 0 auto 2rem ;
   text-align: center;
-  margin: auto;
-  padding-bottom:3rem ;
 }
