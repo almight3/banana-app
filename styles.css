@@ -72,15 +72,14 @@ textarea{
 }
 footer{
   background-color: var(--primary);
-  position:absolute;
-  margin: auto; 
+  position:fixed;
+  width: 100%;
+  bottom: 0;
   
   
 }
 footer div{
-  padding: 1rem auto;
-  max-width: 700;
-  bottom: 0;
-  width: 100%;
+   max-width: 670px;
+  margin: 2.5rem auto;
   text-align: center;
 }
